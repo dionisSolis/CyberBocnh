@@ -1,0 +1,17 @@
+using System;
+namespace CyberBonch
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Random random = new Random();
+            int rateByAlexander = random.Next(0, 10), rateByTimur = random.Next(0, 10);
+            double myRate;
+
+            myRate = ((double) rateByAlexander + rateByTimur)/2;
+            Console.WriteLine($"Оценка Тимура: {rateByTimur}\nОценка Александра: {rateByAlexander}\nМоя оценка: {myRate}");
+            Console.Read();
+        }
+    }
+}
